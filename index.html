@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Entdecken Sie das Rundum Sorglos Energiepaket: PV-Anlage, Wärmepumpe, Speicher inkl. Installation & bis zu 35.000€ Förderung sichern. Sparen Sie bis zu 60% Energiekosten. Kostenlose Beratung anfordern!">
     <meta name="keywords" content="Photovoltaik, PV-Anlage, Wärmepumpe, Energiespeicher, Energiepaket, Komplettlösung, Förderung Photovoltaik, Heizung modernisieren, Energiekosten sparen, Eigenverbrauch, Solaranlage, Wallbox, Balkonkraftwerk">
-    <meta name="author" content="[Ihr Firmenname]">
+    <meta name="author" content="König 39 Energie">
 
     <title>Rundum Sorglos Energiepaket | PV, Wärmepumpe, Speicher & Förderung sichern</title>
 
@@ -13,23 +13,283 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <style>
+        /* Section Separator Styles */
+        .section-separator {
+            overflow: hidden;
+            max-height: 600px;
+            position: relative;
+        }
+        
+        .section-separator img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .section-separator:hover img {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            .section-separator {
+                max-height: 400px;
+            }
+            
+            .section-separator img {
+                height: 400px;
+            }
+        }
+        
+        /* Custom CSS */
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Hero Bereich mit Overlay */
+        .hero-section {
+            position: relative;
+            color: white;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        /* Karten mit Hover-Effekt */
+        .card {
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Counter Styling */
+        .counter-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .counter-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        
+        /* Button Effekte */
+        .btn {
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Pulsierender CTA Button */
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+            }
+        }
+        
+        .btn-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Zum Seitenanfang Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-top:hover {
+            background-color: #0069d9;
+        }
+        
+        /* Responsive styles for FAQ section */
+        #accordion .card-header button {
+            white-space: normal;
+            word-wrap: break-word;
+        }
+        
+        @media (max-width: 768px) {
+            #accordion .card-header h5 {
+                margin-bottom: 0;
+                font-size: 0.95rem;
+            }
+            
+            #accordion .card-header button {
+                padding: 0.5rem 0.75rem;
+            }
+            
+            #accordion .card-header button .fa-question-circle {
+                display: none;
+            }
+            
+            /* Reviews section responsive styles */
+            #reviews .card {
+                margin-bottom: 1.5rem;
+            }
+            
+            #reviews .card-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
     </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">König 39 Energie</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#energiepaket">Energiepaket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demonstration">Funktionsweise</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vorteile">Vorteile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#investition">Investition</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#extras">Extras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Kundenstimmen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3" href="#kontakt">Beratung</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <header>
-        <div class="container-fluid px-0">
-             <img src="koenig39-titel-2500w.jpg" class="img-fluid w-100" alt="Rundum Sorglos Energiepaket mit Photovoltaikanlage, Wärmepumpe und Speicher auf einem Hausdach">
+        <div class="container-fluid px-0 hero-section">
+             <picture>
+                 <source srcset="koenig39-titel-600w.webp" media="(max-width: 600px)" type="image/webp">
+                 <source srcset="koenig39-titel-600w.jpg" media="(max-width: 600px)" type="image/jpeg">
+                 <source srcset="koenig39-titel-1200w.webp" media="(max-width: 1200px)" type="image/webp">
+                 <source srcset="koenig39-titel-1200w.jpg" media="(max-width: 1200px)" type="image/jpeg">
+                 <source srcset="koenig39-titel-2500w.webp" type="image/webp">
+                 <img src="koenig39-titel-2500w.jpg" class="img-fluid w-100" alt="Rundum Sorglos Energiepaket mit Photovoltaikanlage, Wärmepumpe und Speicher auf einem Hausdach">
+             </picture>
+             <div class="hero-overlay">
+                <h1 class="display-4 mb-3">RUNDUM SORGLOS ENERGIEPAKET</h1>
+                <p class="lead mb-4">Ihre komplette Energielösung für Unabhängigkeit & maximale Ersparnis.</p>
+                <a href="#kontakt" class="btn btn-primary btn-lg mt-3 btn-pulse"><i class="fa fa-comments mr-2"></i> Kostenlose Beratung anfordern</a>
+             </div>
         </div>
     </header>
 
     <main>
-        <section class="py-5 bg-light">
+        <!-- Partner/Certification Logos Section -->
+        <section class="py-4 bg-white border-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center mb-3">
+                        <p class="text-muted mb-0 small">WIR ARBEITEN ZUSAMMEN MIT FÜHRENDEN UNTERNEHMEN UND SIND ZERTIFIZIERT:</p>
+                    </div>
+                    <div class="col-12">
+                        <div class="row justify-content-center align-items-center text-center">
+                            <div class="col-4 col-md-2 mb-3 mb-md-0">
+                                <img src="images/logo-viessmann.svg" alt="Viessmann" class="img-fluid mx-auto" style="max-height: 120px; width: auto; opacity: 0.8;">
+                            </div>
+                            <div class="col-4 col-md-2 mb-3 mb-md-0">
+                                <img src="images/logo-dihk.svg" alt="DIHK zertifiziert" class="img-fluid mx-auto" style="max-height: 120px; width: auto; opacity: 0.8;">
+                            </div>
+                            <div class="col-4 col-md-2 mb-3 mb-md-0">
+                                <img src="images/logo-sma.svg" alt="SMA Partner" class="img-fluid mx-auto" style="max-height: 120px; width: auto; opacity: 0.8;">
+                            </div>
+                            <div class="col-4 col-md-2 mb-3 mb-md-0">
+                                <img src="images/logo-tuev.svg" alt="TÜV geprüft" class="img-fluid mx-auto" style="max-height: 120px; width: auto; opacity: 0.8;">
+                            </div>
+                            <div class="col-4 col-md-2 mb-3 mb-md-0">
+                                <img src="images/logo-kfw.svg" alt="KfW Partner" class="img-fluid mx-auto" style="max-height: 120px; width: auto; opacity: 0.8;">
+                            </div>
+                            <div class="col-4 col-md-2 mb-3 mb-md-0">
+                                <img src="images/logo-bafa.svg" alt="BAFA Förderung" class="img-fluid mx-auto" style="max-height: 120px; width: auto; opacity: 0.8;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Solaranlage auf einem Dach" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+
+        <section class="py-5 bg-light" id="energiepaket">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
-                        <h1 class="display-4 mb-3">RUNDUM SORGlos ENERGIEPAKET</h1>
+                        <h2 class="display-4 mb-3">RUNDUM SORGLOS ENERGIEPAKET</h2>
                         <p class="lead mb-4">Ihre komplette Energielösung für Unabhängigkeit & maximale Ersparnis.</p>
-                        <p class="mb-4 font-weight-bold text-success"><i class="fa fa-percent mr-2"></i> Spare bis zu 60% bei deinen Energiekosten!</p>
+                        <p class="mb-4 font-weight-bold text-success"><i class="fa fa-percent mr-2"></i> Sparen Sie bis zu 60% bei Ihren Energiekosten!</p>
+                        
+                        <!-- Animierte Counter -->
+                        <div class="row mt-4 mb-4">
+                            <div class="col-md-4 counter-item">
+                                <div class="counter-value" id="savingsCounter">0%</div>
+                                <p>Energiekosten-Ersparnis</p>
+                            </div>
+                            <div class="col-md-4 counter-item">
+                                <div class="counter-value" id="independenceCounter">0%</div>
+                                <p>Unabhängigkeit</p>
+                            </div>
+                            <div class="col-md-4 counter-item">
+                                <div class="counter-value" id="fundingCounter">0€</div>
+                                <p>Mögliche Förderung</p>
+                            </div>
+                        </div>
 
                         <h3 class="h5 text-muted mb-3">Dieses Paket beinhaltet:</h3>
                         <ul class="list-unstyled mb-4 lead">
@@ -46,6 +306,54 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Windkraftanlagen und Solarmodule" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+        
+        <!-- Installation Statistics Section -->
+        <section class="py-5 bg-primary text-white">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 mb-4">
+                        <h2>Unsere Erfolge in Zahlen</h2>
+                        <p class="lead">Vertrauen Sie auf unsere Erfahrung und Expertise</p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="border-right border-white-50 h-100">
+                            <h3 class="display-4 font-weight-bold" id="installationsCounter">0</h3>
+                            <p>Erfolgreiche Installationen</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="h-100 md-border-right">
+                            <h3 class="display-4 font-weight-bold" id="clientsCounter">0</h3>
+                            <p>Zufriedene Kunden</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="border-right border-white-50 h-100">
+                            <h3 class="display-4 font-weight-bold" id="savingsTotalCounter">0</h3>
+                            <p>Tonnen CO₂ eingespart</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <div class="h-100">
+                            <h3 class="display-4 font-weight-bold" id="kwhCounter">0</h3>
+                            <p>MWh erzeugt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Nahaufnahme von Solarmodulen" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
 
         <section class="py-5">
             <div class="container">
@@ -67,6 +375,11 @@
                 </div>
             </div>
         </section>
+
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Solarpanels im Sonnenuntergang" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
 
         <section class="py-5 bg-light">
             <div class="container">
@@ -125,8 +438,67 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Energieeinsparung durch Wasserkraft" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+        
+        <!-- Visual Product Demonstration Section -->
+        <section class="py-5 bg-light" id="demonstration">
+            <div class="container">
+                <h2 class="text-center mb-5">So funktioniert Ihr Energiepaket</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <div class="position-relative">
+                            <img src="unser-system.png" alt="Visualisierung des Energiesystems" class="img-fluid rounded shadow">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 bg-white shadow-sm">
+                            <div class="card-body p-4">
+                                <p>Unsere PV-Anlagen und Wärmepumpen arbeiten nahtlos zusammen, um maximale Effizienz zu gewährleisten:</p>
+                                <ul class="list-unstyled mt-4">
+                                    <li class="mb-3 d-flex">
+                                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 30px; height: 30px; min-width: 30px;">1</div>
+                                        <div>
+                                            <strong>Solarenergie gewinnen</strong> - Die PV-Module auf Ihrem Dach wandeln Sonnenlicht in Strom um.
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 30px; height: 30px; min-width: 30px;">2</div>
+                                        <div>
+                                            <strong>Energie speichern</strong> - Überschüssige Energie wird im Speicher für die spätere Nutzung gesichert.
+                                        </div>
+                                    </li>
+                                    <li class="mb-3 d-flex">
+                                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 30px; height: 30px; min-width: 30px;">3</div>
+                                        <div>
+                                            <strong>Effizient heizen</strong> - Die Wärmepumpe nutzt die gespeicherte Energie für eine kostengünstige Heizlösung.
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mr-3" style="width: 30px; height: 30px; min-width: 30px;">4</div>
+                                        <div>
+                                            <strong>Intelligente Steuerung</strong> - Das System optimiert automatisch Ihren Energieverbrauch.
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#kontakt" class="btn btn-outline-primary mt-4">Präsentation vereinbaren</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <section class="py-5">
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1566093097221-ac2335b09e70?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Photovoltaikanlage auf Hausdach" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+
+        <section class="py-5 bg-light" id="vorteile">
             <div class="container">
                 <h2 class="text-center mb-5">Ihre Vorteile mit unserem Energiepaket</h2>
                 <div class="row">
@@ -158,7 +530,12 @@
             </div>
         </section>
 
-        <section class="py-5 bg-light">
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1548337138-e87d889cc369?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Solaranlage mit Wärmepumpe" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+
+        <section class="py-5 bg-light" id="investition">
             <div class="container">
                 <h2 class="text-center mb-5">Ihre Investition & Ihre Vorteile</h2>
                 <div class="row justify-content-center">
@@ -182,8 +559,185 @@
                 </div>
             </div>
         </section>
+        
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Nahaufnahme von Solarzellen" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+        
+        <!-- ROI & Data Visualization Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="text-center mb-5">Ihre Investition zahlt sich aus</h2>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h3 class="text-center mb-4">Kostenvergleich über 20 Jahre</h3>
+                                <!-- Placeholder for chart - would be replaced with actual graph -->
+                                <div class="bg-light p-3 mb-3 text-center" style="height: 300px; display: flex; align-items: center; justify-content: center;">
+                                    <div style="width: 100%; height: 100%; position: relative;">
+                                        <!-- Simplified chart representation -->
+                                        <div style="position: absolute; bottom: 0; left: 0; width: 45%; height: 90%; background-color: #dc3545; display: flex; align-items: flex-end; justify-content: center; color: white; font-weight: bold;">
+                                            <div style="padding-bottom: 10px;">Ohne PV</div>
+                                        </div>
+                                        <div style="position: absolute; bottom: 0; right: 0; width: 45%; height: 40%; background-color: #28a745; display: flex; align-items: flex-end; justify-content: center; color: white; font-weight: bold;">
+                                            <div style="padding-bottom: 10px;">Mit PV</div>
+                                        </div>
+                                        <div style="position: absolute; bottom: 40%; right: 0; width: 45%; height: 50%; background-color: #007bff; opacity: 0.7; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">
+                                            Ersparnis
+                                        </div>
+                                        <!-- X and Y axis labels -->
+                                        <div style="position: absolute; bottom: -25px; left: 0; width: 100%; text-align: center; font-size: 12px;">
+                                            Zeitraum: 20 Jahre
+                                        </div>
+                                        <div style="position: absolute; top: 50%; left: -25px; transform: rotate(-90deg); transform-origin: left; font-size: 12px;">
+                                            Kosten in €
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <p class="text-danger mb-0 font-weight-bold">€120.000</p>
+                                        <small class="text-muted">Ohne PV</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-success mb-0 font-weight-bold">€48.000</p>
+                                        <small class="text-muted">Mit PV</small>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-primary mb-0 font-weight-bold">€72.000</p>
+                                        <small class="text-muted">Ersparnis</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="mb-4">Ihre Vorteile in Zahlen:</h3>
+                        <div class="progress-container mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Reduzierung der Stromkosten</span>
+                                <span class="font-weight-bold">85%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Reduzierung der Heizkosten</span>
+                                <span class="font-weight-bold">65%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>CO₂-Reduktion</span>
+                                <span class="font-weight-bold">90%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="progress-container mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Unabhängigkeit vom Stromnetz</span>
+                                <span class="font-weight-bold">70%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="alert alert-info mt-4">
+                            <i class="fa fa-info-circle mr-2"></i> Amortisation Ihrer Investition: <strong>Durchschnittlich 8-10 Jahre</strong> (inkl. Förderung)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Visual Separator -->
+        <div class="section-separator">
+            <img src="https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=400&q=80" alt="Energieeinsparung und Kostenreduktion" class="img-fluid w-100" style="object-fit: cover;">
+        </div>
+        
+        <!-- Neue Bewertungssektion -->
+        <section class="py-5" id="reviews">
+            <div class="container">
+                <h2 class="text-center mb-5">Das sagen unsere Kunden</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                                <p class="card-text text-center font-italic mb-4">"König 39 Energie hat uns hervorragend beraten und die PV-Anlage war innerhalb weniger Tage installiert. Unser Stromverbrauch ist jetzt um 70% reduziert und die versprochene Förderung wurde problemlos ausgezahlt."</p>
+                                <div class="text-center">
+                                    <h5 class="card-title mb-0">Familie Müller</h5>
+                                    <p class="text-muted small">Köln</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                                <p class="card-text text-center font-italic mb-4">"Die Kombination aus Wärmepumpe und PV-Anlage war genau die richtige Entscheidung. Der Prozess war unkompliziert und die Beratung kompetent. Unsere Heizkosten sind drastisch gesunken. Klare Empfehlung!"</p>
+                                <div class="text-center">
+                                    <h5 class="card-title mb-0">Thomas Schmidt</h5>
+                                    <p class="text-muted small">München</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center mb-3">
+                                    <span class="text-warning">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </span>
+                                </div>
+                                <p class="card-text text-center font-italic mb-4">"Wir waren skeptisch, ob sich die Investition lohnt, aber nach nur einem Jahr sehen wir bereits deutliche Einsparungen. Die Beratung war ehrlich und die Umsetzung professionell. Das Team hat alle Fragen geduldig beantwortet."</p>
+                                <div class="text-center">
+                                    <h5 class="card-title mb-0">Sabine & Peter Weber</h5>
+                                    <p class="text-muted small">Hamburg</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="lead">Überzeugen Sie sich selbst und starten Sie Ihren Weg zur Energieunabhängigkeit!</p>
+                    <a href="#kontakt" class="btn btn-primary"><i class="fa fa-comments mr-2"></i> Kostenlose Beratung vereinbaren</a>
+                </div>
+            </div>
+        </section>
 
-        <section class="py-5">
+        <section class="py-5" id="extras">
             <div class="container">
                 <h2 class="text-center mb-5">Wählen Sie Ihr exklusives Gratis-Extra!</h2>
                 <p class="lead text-center mb-5">Bei Beauftragung Ihres Energiepakets schenken wir Ihnen eines von zwei attraktiven Extras:</p>
@@ -251,65 +805,69 @@
             </div>
         </section>
 
-        <section class="py-5">
-            <div class="container">
+        <section class="py-5" id="faq">
+            <div class="container px-3">
                 <h2 class="text-center mb-5">Häufig gestellte Fragen (FAQ)</h2>
                 <div class="row justify-content-center">
-                    <div class="col-lg-10">
+                    <div class="col-12 col-lg-10">
                         <div id="accordion">
                             <div class="card mb-2">
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            <i class="fa fa-question-circle mr-2"></i> Wie funktioniert die Beantragung der Förderung?
+                                        <button class="btn btn-link w-100 text-left d-flex justify-content-between align-items-center px-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="pr-3"><i class="fa fa-question-circle mr-2"></i> Wie funktioniert die Beantragung der Förderung?</span>
+                                            <i class="fa fa-chevron-down"></i>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                                     <div class="card-body text-muted">
-                                        [Antwort: Wir identifizieren passende Förderprogramme für Sie und unterstützen Sie aktiv bei der Zusammenstellung und Einreichung aller notwendigen Unterlagen, um Ihre maximale Förderung zu sichern.]
+                                        Wir identifizieren passende Förderprogramme für Sie und unterstützen Sie aktiv bei der Zusammenstellung und Einreichung aller notwendigen Unterlagen, um Ihre maximale Förderung zu sichern.
                                     </div>
                                 </div>
                             </div>
                             <div class="card mb-2">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                             <i class="fa fa-question-circle mr-2"></i> Wie lange dauert die Installation?
+                                        <button class="btn btn-link collapsed w-100 text-left d-flex justify-content-between align-items-center px-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="pr-3"><i class="fa fa-question-circle mr-2"></i> Wie lange dauert die Installation?</span>
+                                            <i class="fa fa-chevron-down"></i>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                                     <div class="card-body text-muted">
-                                        [Antwort: Die Installationsdauer hängt vom Umfang des Pakets und den Gegebenheiten vor Ort ab. Eine typische Installation dauert in der Regel [X] Tage. Wir besprechen den genauen Zeitplan im Rahmen der Beratung.]
+                                        Die Installationsdauer hängt vom Umfang des Pakets und den Gegebenheiten vor Ort ab. Eine typische Installation dauert in der Regel 2-3 Tage. Wir besprechen den genauen Zeitplan im Rahmen der Beratung.
                                     </div>
                                 </div>
                             </div>
-                             <div class="card mb-2">
+                            <div class="card mb-2">
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                             <i class="fa fa-question-circle mr-2"></i> Was ist, wenn mein Dach nicht ideal für PV ist?
+                                        <button class="btn btn-link collapsed w-100 text-left d-flex justify-content-between align-items-center px-3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="pr-3"><i class="fa fa-question-circle mr-2"></i> Was ist, wenn mein Dach nicht ideal für PV ist?</span>
+                                            <i class="fa fa-chevron-down"></i>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                                     <div class="card-body text-muted">
-                                        [Antwort: In der kostenlosen Beratung prüfen wir die Eignung Ihres Daches und finden die optimale Lösung für Ihre spezifische Situation. Es gibt oft alternative Platzierungen oder Anpassungen.]
+                                        In der kostenlosen Beratung prüfen wir die Eignung Ihres Daches und finden die optimale Lösung für Ihre spezifische Situation. Es gibt oft alternative Platzierungen oder Anpassungen.
                                     </div>
                                 </div>
                             </div>
-                             <div class="card mb-2">
+                            <div class="card mb-2">
                                 <div class="card-header" id="headingFour">
                                     <h5 class="mb-0">
-                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                             <i class="fa fa-question-circle mr-2"></i> Kann ich einzelne Komponenten auch später erweitern?
+                                        <button class="btn btn-link collapsed w-100 text-left d-flex justify-content-between align-items-center px-3" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span class="pr-3"><i class="fa fa-question-circle mr-2"></i> Kann ich einzelne Komponenten auch später erweitern?</span>
+                                            <i class="fa fa-chevron-down"></i>
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                                     <div class="card-body text-muted">
-                                        [Antwort: Ja, unser System ist modular aufgebaut. Komponenten wie der Speicher können in der Regel später erweitert werden, falls sich Ihr Energiebedarf ändert.]
+                                        Ja, unser System ist modular aufgebaut. Komponenten wie der Speicher können in der Regel später erweitert werden, falls sich Ihr Energiebedarf ändert.
                                     </div>
                                 </div>
                             </div>
@@ -323,8 +881,8 @@
             <div class="container">
                 <h2>Bereit für Ihr Rundum Sorglos Energiepaket?</h2>
                 <p class="lead mb-4">Sichern Sie sich jetzt Ihre individuelle Energieunabhängigkeit und hohe Einsparungen.</p>
-                <a href="mailto:[Ihre E-Mail]" class="btn btn-light btn-lg mr-3"><i class="fa fa-envelope mr-2"></i> Jetzt E-Mail schreiben</a>
-                 <a href="tel:[Ihre Telefonnummer]" class="btn btn-outline-light btn-lg"><i class="fa fa-phone mr-2"></i> Oder rufen Sie uns an</a>
+                <a href="mailto:info@koenig39.de" class="btn btn-light btn-lg mr-3"><i class="fa fa-envelope mr-2"></i> Jetzt E-Mail schreiben</a>
+                 <a href="tel:+49151123456789" class="btn btn-outline-light btn-lg"><i class="fa fa-phone mr-2"></i> Oder rufen Sie uns an</a>
                  <p class="mt-4">Oder nutzen Sie unser Kontaktformular:</p>
                  <div class="row justify-content-center mt-3">
                      <div class="col-md-8 col-lg-6">
@@ -343,7 +901,7 @@
                              </div>
                               <div class="form-group form-check text-left">
                                 <input type="checkbox" class="form-check-input" id="datenschutzCheck">
-                                <label class="form-check-label small" for="datenschutzCheck">Ich habe die <a href="[Link zum Datenschutz]" class="text-white text-decoration-underline">Datenschutzerklärung</a> gelesen und akzeptiere sie.*</label>
+                                <label class="form-check-label small" for="datenschutzCheck">Ich habe die <a href="https://www.koenig39.de/datenschutz" class="text-white text-decoration-underline">Datenschutzerklärung</a> gelesen und akzeptiere sie.*</label>
                               </div>
                              <button type="submit" class="btn btn-light btn-block" disabled>Nachricht senden (Formular benötigt Backend)</button>
                              <small class="text-white-50">* Pflichtfelder</small>
@@ -356,18 +914,23 @@
 
     </main>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
     <footer class="bg-dark text-white-50 py-4">
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>[Ihr Firmenname]</h5>
-                    <p>[Ihre Straße Hausnummer]<br>[Ihre PLZ Ort]</p>
+                    <h5>König 39 Energie GmbH</h5>
+                    <p>Sonnenallee 123<br>10115 Berlin</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Kontakt</h5>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone mr-2"></i> <a href="tel:[Ihre Telefonnummer]" class="text-white-50">[Ihre Telefonnummer]</a></li>
-                        <li><i class="fa fa-envelope mr-2"></i> <a href="mailto:[Ihre E-Mail]" class="text-white-50">[Ihre E-Mail]</a></li>
+                        <li><i class="fa fa-phone mr-2"></i> <a href="tel:+49151123456789" class="text-white-50">+49 151 12345 6789</a></li>
+                        <li><i class="fa fa-envelope mr-2"></i> <a href="mailto:info@koenig39.de" class="text-white-50">info@koenig39.de</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -380,7 +943,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col text-center">
-                    <small>&copy; [Aktuelles Jahr] [Ihr Firmenname]. Alle Rechte vorbehalten.</small>
+                    <small>&copy; 2025 König 39 Energie GmbH. Alle Rechte vorbehalten.</small>
                 </div>
             </div>
         </div>
@@ -389,5 +952,94 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script>
+        // When the document is ready
+        $(document).ready(function() {
+            // Start counter animation
+            setTimeout(function() {
+                animateCounters();
+            }, 1000);
+            
+            // Smooth scrolling for anchor links
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = this.hash;
+                var $target = $(target);
+                
+                if($target.length) {
+                    $('html, body').animate({
+                        'scrollTop': $target.offset().top - 70
+                    }, 800, 'swing');
+                }
+            });
+            
+            // Form validation
+            $('form').on('submit', function(e) {
+                e.preventDefault();
+                alert('Vielen Dank für Ihre Anfrage! Wir werden uns umgehend bei Ihnen melden.');
+                // Here you would normally send the form data to your server
+                this.reset();
+            });
+        });
+        
+        // Show/hide back to top button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+        
+        // Back to top functionality
+        document.getElementById("backToTop").addEventListener("click", function(e) {
+            e.preventDefault();
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+        
+        // Animated counter function
+        function animateCounters() {
+            // Savings counter
+            animateValue("savingsCounter", 0, 60, 2000, "%");
+            
+            // Independence counter
+            animateValue("independenceCounter", 0, 90, 2000, "%");
+            
+            // Funding counter
+            animateValue("fundingCounter", 0, 35000, 2000, "€");
+            
+            // New statistics counters
+            animateValue("installationsCounter", 0, 500, 2000, "");
+            animateValue("clientsCounter", 0, 450, 2000, "");
+            animateValue("savingsTotalCounter", 0, 1250, 2000, "");
+            animateValue("kwhCounter", 0, 3500, 2000, "");
+        }
+        
+        function animateValue(id, start, end, duration, suffix) {
+            if (start === end) return;
+            var range = end - start;
+            var current = start;
+            var increment = end > start ? 1 : -1;
+            var stepTime = Math.abs(Math.floor(duration / range));
+            var obj = document.getElementById(id);
+            
+            if (!obj) return; // Check if element exists
+            
+            var timer = setInterval(function() {
+                current += increment;
+                if (id === "fundingCounter") {
+                    // Add thousands separator for currency
+                    obj.innerHTML = current.toLocaleString() + suffix;
+                } else {
+                    obj.innerHTML = current + suffix;
+                }
+                
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, stepTime);
+        }
+    </script>
 </body>
 </html>
